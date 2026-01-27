@@ -30,7 +30,7 @@ const Dashboard = () => {
       <Grid container spacing={4}>
         {/* First Row */}
         <Grid size={{ xs: 12, sm: 6, md:4  }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
             <StyledDashboardButton href='patient-dashboard/appointment'>
               <LottieContainer>
                 <DotLottiePlayer
@@ -41,6 +41,7 @@ const Dashboard = () => {
                     width:"100%",
                     height:"100%",
                     borderRadius:"20px",
+                    
                   }}
                 />
               </LottieContainer>

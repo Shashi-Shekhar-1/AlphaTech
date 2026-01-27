@@ -74,7 +74,7 @@ const Login = () => {
 
         <p style={{marginTop:"10px"}}>
           Don't have an account?{" "}
-          <Link to="/Signup" style={{color:"#4da6ff"}}>Sign up</Link> 
+          <Link to="/Signup" style={{color:"#2434ec"}}>Sign up</Link> 
         </p>
       </form>
     </div>
