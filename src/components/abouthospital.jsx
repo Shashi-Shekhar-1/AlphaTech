@@ -1,14 +1,3 @@
-// const Abouthospital=()=>{
-//   return(
-//     <div>
-//       <h3>this is the Abouthospital page</h3>
-//     </div>
-//   )
-// }
-
-// export default Abouthospital;
-
-
 import { colors } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -16,10 +5,19 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
+import hospitalImg from "../photo/hospital123.jpeg";
+
 
 const hospitalData = [
-  {
+    {
     id: 1,
+    name: "RIMS Ranchi",
+    location: "Ranchi",
+    type: "Government",
+    rating: 5,
+  },
+  {
+    id: 8,
     name: "Global Hospital",
     location: "Sindri",
     type: "Private",
@@ -27,10 +25,17 @@ const hospitalData = [
   },
   {
     id: 2,
-    name: "District Hospital Dhanbad",
-    location: "Dhanbad",
+    name: "AIIMS Deoghar",
+    location: "Deoghar",
     type: "goverrnment",
     rating: 5,
+  },
+  {
+    id:4,
+    name:"Sadar Hospital Palamu",
+    location: "Daltonganj",
+    type:"Government",
+    rating:4
   },
   {
     id: 3,
@@ -39,13 +44,7 @@ const hospitalData = [
     type: "Government",
     rating: 3,
   },
-  {
-    id: 4,
-    name: "Sadar Hospital",
-    location: "Ranchi",
-    type: "Government",
-    rating: 4,
-  },
+
   {
     id: 5,
     name: "Devkamal Hospital",
@@ -67,13 +66,7 @@ const hospitalData = [
     type: "Private",
     rating: 5,
   },
-  {
-    id: 8,
-    name: "AIIMS Medical College",
-    location: "Deoghar",
-    type: "Government",
-    rating: 5,
-  },
+
 
 ];
 
@@ -96,6 +89,10 @@ const Abouthospital = () => {
   const handleBack = () => {
     navigate(-1);
   };
+
+  const [showImage, setShowImage] = useState(false);
+
+
 
   return (
     <div className="finder-wrapper">
@@ -190,13 +187,35 @@ const Abouthospital = () => {
 
               <button
                 className="view-btn"
-                 onClick={() => navigate("/departmentpage")}
+                onClick={() => setShowImage(true)}
+
+
               >About Hospital
               </button>
             </div>
           ))}
         </div>
       </div>
+{showImage && (
+  <div className="fullscreen-modal">
+    <button
+      className="close-btn"
+      onClick={() => setShowImage(false)}
+      aria-label="Close"
+    >
+      ✕
+    </button>
+
+    <img
+      src={hospitalImg}
+      alt="Hospital"
+      className="fullscreen-image"
+    />
+  </div>
+)}
+
+
+
     </div>
   );
 };
