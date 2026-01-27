@@ -12,7 +12,7 @@ const hospitalData = [
   {
     id: 1,
     name: "RIMS Ranchi",
-    location: "Sindri",
+    location: "Ranchi",
     type: "Government",
     rating: 4,
   },
