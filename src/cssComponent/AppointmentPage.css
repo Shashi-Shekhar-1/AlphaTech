@@ -1,0 +1,143 @@
+.appointment-container {
+  width: 95vw;
+  max-width: 95vw;
+  margin-left: 100px; 
+  margin-right: 100px;
+  padding: 20px 30px;
+  background-color: #91ef94;
+  margin-top: 30px;
+  height:800px;
+  min-height: 100vh;
+
+  
+
+}
+
+.page-title {
+  font-size: 34px;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+.top-section {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.calendar-box,
+.timing-box {
+  flex: 1;
+  background: rgb(207, 240, 241);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-box input {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.hint-text {
+  display: block;
+  margin-top: 8px;
+  color: #777;
+}
+
+.timing-box p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.probability-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.progress-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle span {
+  background: white;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.probability-text {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.history-text {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #666;
+}
+
+.confirm-btn {
+  padding: 16px 46px;
+  font-size: 19px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #0d47a1;
+}
+
+.success-message {
+  margin-left: 300px;
+  margin-top: -50px;
+  font-size: 20px;
+  color: green;
+  animation: blink 1s infinite;
+}
+
+.failed-message {
+   margin-left: 300px;
+  margin-top: -50px;
+  font-size: 20px;
+  color: #e53935;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .appointment-container {
+    padding: 20px;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+}

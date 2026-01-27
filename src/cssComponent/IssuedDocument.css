@@ -1,0 +1,134 @@
+:root {
+  --primary-blue: #4477ff;
+  --bg-light: #f4f7fe;
+  --text-dark: #333;
+  --border-color: #e0e6ed;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-light);
+  font-family: 'Inter', sans-serif;
+}
+
+.app-container1 {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
+  margin-top: -300px;
+  
+}
+
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+.front{
+  margin-top: 400px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.document-card {
+  background: white;
+  border: 1px solid var(--primary-blue);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.btn-upload {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.drag-drop-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #64748b;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.category-btn {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+  color: #333;
+}
+
+.category-btn:hover {
+  border-color: var(--primary-blue);
+  background-color: #6dc7ea;
+  color: white;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doc-table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid var(--bg-light);
+  color: #64748b;
+}
+
+.doc-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* In a real app, use a hamburger menu */
+  }
+  .main-content {
+    padding: 15px;
+  }
+  .category-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
