@@ -77,7 +77,7 @@ const Emergency = () => {
                 <p><strong>Ashmit Baraik (Frnd)</strong> +91 6299764667</p>
                 <p><strong>Vivek Kumar (Frnd)</strong> +91 8102472502</p>
 
-                <p className="subtext">Family Doctor</p>
+                <p className="subtext1">Add Contact ➕</p>
               </div>
               <span className="call-mini"></span>
               

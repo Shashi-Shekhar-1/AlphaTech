@@ -70,7 +70,7 @@ const Dashboard = () => {
 
         <Grid size={{ xs: 12, sm: 6, md:4  }}>
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <StyledDashboardButton href='/patient-dashboard/available-bed'>
+            <StyledDashboardButton href='/patient-dashboard/availablebedhospital'>
               <LottieContainer>
                 <DotLottiePlayer
                   src={Bed}

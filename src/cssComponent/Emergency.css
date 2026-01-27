@@ -132,11 +132,19 @@ body {
   margin-bottom: 8px;
 }
 
-.subtext {
+.subtext1 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #777;
+  color: #13ea4c;
   margin: 4px 0;
+  cursor: pointer;
+}
+.subtext{
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #696969;
+  margin: 4px 0;
+  
 }
 
 .contact-row {

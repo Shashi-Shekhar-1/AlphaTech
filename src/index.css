@@ -1,6 +1,7 @@
  src/components/Auth/Auth.css 
 { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', sans-serif; }
-body { background: linear-gradient(135deg,#ebebe5,#e0dfdd); height:100vh; display:flex; justify-content:center; align-items:center; } 
+body 
+{ background: linear-gradient(135deg,#a59f99,#e1e7e2); height:100vh; display:flex; justify-content:center; align-items:center; } 
 
 .auth-container {
   background: #fff; padding:35px 25px; border-radius:20px; box-shadow:0px 10px 20px rgba(228, 43, 37, 0.2); width:150%; max-width:380px,;

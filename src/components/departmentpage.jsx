@@ -55,14 +55,14 @@ const departmentsData = [
     name: "Mental Health",
     floor: 2,
     room: 210,
-    image: "https://cdn-icons-png.flaticon.com/512/2966/2966487.png",
+    image: "https://cdn-icons-png.flaticon.com/512/2966/2966476.png",
   },
   {
     id: 8,
     name: "ENT",
     floor: 2,
     room: 210,
-    image: "https://cdn-icons-png.flaticon.com/512/2966/2966487.png",
+    image: "https://cdn-icons-png.flaticon.com/512/2966/2966479.png",
   },
 ];
 
