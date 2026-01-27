@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./signup.jsx"
 import Login from "./login.jsx";
 import Dashboard from "./patient-dashboard.jsx";
+import AdminDashboard from "./admin-dashboard.jsx";
+
+
 import Appointment from "./components/appointment.jsx";
 import Emergency from "./components/emergency.jsx";
 import Bed from "./components/availablebed.jsx";
@@ -23,6 +26,8 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/patient-dashboard" element={<Dashboard/>}/>
+        <Route path="/admin-dashboard" element={<AdminDashboard/>}/>
+
         <Route path="/patient-dashboard/appointment" element={<Appointment/>}/>
         <Route path="/patient-dashboard/emergency" element={<Emergency/>}/>
         <Route path="/patient-dashboard/available-bed" element={<Bed/>}/>

@@ -11,23 +11,23 @@ import "../cssComponent/Appointment.css"
 const hospitalData = [
   {
     id: 1,
-    name: "Global Hospital",
+    name: "RIMS Ranchi",
     location: "Sindri",
-    type: "Private",
+    type: "Government",
     rating: 4,
   },
   {
     id: 2,
     name: "District Hospital Dhanbad",
     location: "Dhanbad",
-    type: "goverrnment",
+    type: "Government",
     rating: 5,
   },
   {
     id: 3,
     name: "Orchid Hospital",
     location: "Ranchi",
-    type: "Government",
+    type: "Private",
     rating: 3,
   },
   {

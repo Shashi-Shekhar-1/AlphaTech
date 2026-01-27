@@ -89,7 +89,7 @@ const Signup = () => {
         />
         <select name="role" value={formData.role} onChange={handleChange}>
           <option value="Patient">Patient</option>
-          <option value="Doctor">Doctor</option>
+          {/* <option value="Doctor">Doctor</option> */}
           <option value="Admin">Admin</option>
         </select>
         <button type="submit">Signup</button>

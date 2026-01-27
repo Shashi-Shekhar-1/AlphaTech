@@ -1,0 +1,130 @@
+/* Container */
+.admin-dashboard-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* max-width: 1200px; */
+  width: 95vw;
+  max-width: 95vw;
+  margin: 0 auto;
+  background-color: #b5d9e2;
+}
+
+/* Title */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #2c3e50;
+}
+
+/* Beds Section */
+.beds-section {
+  margin-bottom: 40px;
+}
+
+.beds-section h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.beds-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bed-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bed-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.bed-box.vacant {
+  background-color: #4caf50;
+}
+
+.bed-box.occupied {
+  background-color: #f44336;
+}
+
+.vacant-count {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Appointments Section */
+.appointments-section {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.appointments-section h2 {
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.appointment-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.appointment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-row label {
+  font-weight: 500;
+}
+
+.data{
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.appointment-row input {
+  width: 100px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #3aed4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 40%;
+
+}
+
+.submit-btn:hover {
+  background-color: rgba(97, 175, 231, 1);
+  
+}

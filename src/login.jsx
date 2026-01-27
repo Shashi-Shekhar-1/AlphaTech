@@ -35,7 +35,7 @@ const Login = () => {
         alert("Login successful!");
         // Navigate based on role if needed
         if (userData.role === "Patient") navigate("/patient-dashboard");
-        else if (userData.role === "Doctor") navigate("/doctor-dashboard");
+        // else if (userData.role === "Doctor") navigate("/doctor-dashboard");
         else navigate("/admin-dashboard");
       } else {
         alert("No user data found!");
