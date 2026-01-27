@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
+import '../cssComponent/AvailableBed.css';
+
 
 const hospitalData = [
   {

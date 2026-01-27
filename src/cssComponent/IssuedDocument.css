@@ -12,13 +12,12 @@ body {
 }
 
 .app-container1 {
-  width: 100vw;
+  width: 97vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fcfcfc;
-  margin-top: -300px;
-  
+  margin-top: -28%;
 }
 
 

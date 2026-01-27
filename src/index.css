@@ -1,6 +1,23 @@
  src/components/Auth/Auth.css 
 { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', sans-serif; }
-body { background: linear-gradient(135deg,#ebebe5,#e0dfdd); height:100vh; display:flex; justify-content:center; align-items:center; } 
+
+/* body { background: linear-gradient(135deg,#ebebe5,#e0dfdd); height:100vh; display:flex; justify-content:center; align-items:center; }  */
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(30, 136, 229, 0.1),
+      rgba(30, 136, 229, 0.1)
+    ),
+    url("./photo/bgimage.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .auth-container {
   background: #fff; padding:35px 25px; border-radius:20px; box-shadow:0px 10px 20px rgba(228, 43, 37, 0.2); width:150%; max-width:380px,;
@@ -119,7 +136,7 @@ button:hover {
 
 /* appointment */
 
-.departments-wrapper {
+/* .departments-wrapper {
   width: 100%;
   padding: 32px;
   margin-top: 40px;
@@ -145,7 +162,7 @@ button:hover {
   margin-bottom: 32px;
 }
 
-/* GRID */
+
 .departments-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -153,7 +170,7 @@ button:hover {
   row-gap: 40px;
 }
 
-/* CARD */
+
 .department-card {
   background: linear-gradient(135deg, #e3f2fd, #ffffff);
   border-radius: 20px;
@@ -185,7 +202,7 @@ button:hover {
   font-size: 14px;
 }
 
-/* BUTTON */
+
 .visit-btn {
   width: 100%;
   padding: 10px;
@@ -195,14 +212,14 @@ button:hover {
   color: white;
   font-weight: 600;
   cursor: pointer;
-  /* transition: background 0.2s ease; */
+  
 }
 
 .visit-btn:hover {
   background: #125ea8;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1024px) {
   .departments-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -214,7 +231,7 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
-
+ */
 
 
 
