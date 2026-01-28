@@ -87,7 +87,7 @@ const Emergency = () => {
 
           <div className="info-card">
             <p><strong>Live Location</strong></p>
-            <p className="subtext">Address: Hostel 30, Birsa Institute Of Technology Sindri, Dhanbad Jharkhand</p>
+            <p className="subtext">Address: Room-F14,IT Building , Birsa Institute Of Technology (BIT) Sindri, Dhanbad Jharkhand</p>
             <p className="subtext">GPS Coordinates: 40.7128° N, 74.0060° W</p>
           </div>
         </section>
